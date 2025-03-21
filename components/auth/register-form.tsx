@@ -19,18 +19,19 @@ import { z } from "zod";
 const AssistanceForm = () => {
   const [loading, setLoading] = useState(false);
 
-  const form = useForm({
-    resolver: zodResolver(AssistanceSchema),
-    mode: "onBlur", // Validaciones al perder el foco
-    defaultValues: {
-      softwareName: "",
-      date: "",
-      startTime: "",
-      duration: "",
-      teacherEmail: "",
-      monitorEmail: "",
-    },
-  });
+// ✅ Solución: Especificamos el tipo del formulario
+const form = useForm<z.infer<typeof AssistanceSchema>>({
+  resolver: zodResolver(AssistanceSchema),
+  mode: "onBlur", // Validaciones al perder el foco
+  defaultValues: {
+    softwareName: "",
+    date: "",
+    startTime: "",
+    duration: 1, // puede quedarse como string aquí
+    teacherEmail: "",
+    monitorEmail: "",
+  },
+});
 
   const onSubmit = (data: z.infer<typeof AssistanceSchema>) => {
     setLoading(true);
