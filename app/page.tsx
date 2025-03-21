@@ -7,7 +7,7 @@ export default function Home() {
       <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="text-center bg-white bg-opacity-80 rounded-lg p-6 shadow-lg">
           <Image
-            src="/assets/logoUIFCE.png"
+            src="https://res.cloudinary.com/ao73ir9fa/image/upload/v1742569750/icons/LogoUIFCE_iznqog.png"
             alt="Logo UIFCE"
             width={400}
             height={100}
