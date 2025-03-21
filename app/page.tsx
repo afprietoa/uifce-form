@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className=" relative min-h-screen bg-cover bg-center"  style={{ backgroundImage: "url('/assets/EconomicasUnal.png')" }}>
+    <div className=" relative min-h-screen bg-cover bg-center"  style={{ backgroundImage: "url('/assets/EconomicasUnal.jpg')" }}>
       <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="text-center bg-white bg-opacity-80 rounded-lg p-6 shadow-lg">
           <Image

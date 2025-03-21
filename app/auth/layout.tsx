@@ -4,7 +4,7 @@ const AuthLayout = ({children}: {children: React.ReactNode}) => {
   return (
     <section
       className="w-full h-screen bg-cover bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/EconomicasUnal.png')" }}
+      style={{ backgroundImage: "url('/assets/EconomicasUnal.jpg')" }}
     >
       
       <div className='h-screen flex items-center justify-center opacity-90'>
