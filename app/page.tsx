@@ -3,9 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className=" relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/assets/background.jpg)' }}>
-      <div className=" absolute inset-0 bg-black bg-opacity-50"></div> {/* Fondo oscuro semitransparente */}
-      <div className=" container relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+    <div className=" relative min-h-screen bg-cover bg-center"  style={{ backgroundImage: "url('/assets/EconomicasUnal.png')" }}>
+      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="text-center bg-white bg-opacity-80 rounded-lg p-6 shadow-lg">
           <Image
             src="/assets/logoUIFCE.png"
